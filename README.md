@@ -32,7 +32,7 @@ Chaque stratégie a ses avantages et ses inconvénients. Le choix de la meilleur
 ![](mapping_concclass.png)
 
 ```xml
-<class name="Character" table="t_character" abstract="true">
+<class name="Character" abstract="true">
     <id name="Id" column="char_id" type="int">
         <generator class="increment">
         </generator>
