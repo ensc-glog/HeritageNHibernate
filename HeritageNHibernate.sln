@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablePerHierarchy", "TableP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablePerConcreteClass", "TablePerConcreteClass\TablePerConcreteClass.csproj", "{5819044E-4D0A-42F4-B9A7-E4625CF3D923}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablePerSubclass", "TablePerSubclass\TablePerSubclass.csproj", "{9EAF07F0-0E4C-4A06-8039-94747603C4CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{5819044E-4D0A-42F4-B9A7-E4625CF3D923}.Debug|x86.Build.0 = Debug|x86
 		{5819044E-4D0A-42F4-B9A7-E4625CF3D923}.Release|x86.ActiveCfg = Release|x86
 		{5819044E-4D0A-42F4-B9A7-E4625CF3D923}.Release|x86.Build.0 = Release|x86
+		{9EAF07F0-0E4C-4A06-8039-94747603C4CC}.Debug|x86.ActiveCfg = Debug|x86
+		{9EAF07F0-0E4C-4A06-8039-94747603C4CC}.Debug|x86.Build.0 = Debug|x86
+		{9EAF07F0-0E4C-4A06-8039-94747603C4CC}.Release|x86.ActiveCfg = Release|x86
+		{9EAF07F0-0E4C-4A06-8039-94747603C4CC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

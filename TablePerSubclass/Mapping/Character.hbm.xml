@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="TablePerSubclass" namespace="TablePerSubclass">
+	<class name="Character" table="t_character" abstract="true">
+		<id name="Id" column="char_id" type="int">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="Name" column="char_name" />
+		<joined-subclass name="Player" table="t_player">
+			<key column="char_id" />
+			<property name="Title" column="pla_title" />
+		</joined-subclass>
+		<joined-subclass name="NPC" table="t_npc">
+			<key column="char_id" />
+			<property name="XpValue" column="npc_xpvalue" />
+		</joined-subclass>
+	</class>
+</hibernate-mapping>
