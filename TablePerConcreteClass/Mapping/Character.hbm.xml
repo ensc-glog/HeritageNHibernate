@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="TablePerConcreteClass" namespace="TablePerConcreteClass">
+	<class name="Character" table="t_character" abstract="true">
+		<id name="Id" column="char_id" type="int">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="Name" column="char_name" />
+		<union-subclass name="Player" table="t_player">
+			<property name="Title" column="pla_title" />
+		</union-subclass>
+		<union-subclass name="NPC" table="t_npc">
+			<property name="XpValue" column="npc_xpvalue" />
+		</union-subclass>
+	</class>
+</hibernate-mapping>

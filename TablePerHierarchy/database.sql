@@ -10,8 +10,9 @@ create table t_character (
     char_id integer not null primary key auto_increment,
     char_type varchar(20) not null,
     char_name varchar(100) not null,
+    /* les colonnes spécifiques ne peuvent pas être NOT NULL */
     char_title varchar(100),
-    char_xpvalue integer
+    char_xpvalue integer 
 );
 
 insert into t_character values (1, 'PLA', 'Aurora', 'Knight', null);
