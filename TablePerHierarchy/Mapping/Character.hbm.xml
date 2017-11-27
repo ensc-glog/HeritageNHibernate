@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="TablePerHierarchy" namespace="TablePerHierarchy">
+	<class name="Character" table="t_character" abstract="true">
+		<id name="Id" column="char_id" type="int">
+			<generator class="native">
+			</generator>
+		</id>
+		<discriminator column="char_type" type="String" />
+		<property name="Name" column="char_name" />
+		<subclass name="Player" discriminator-value="PLA">
+			<property name="Title" column="char_title" />
+		</subclass>
+		<subclass name="NPC" discriminator-value="NPC">
+			<property name="XpValue" column="char_xpvalue" />
+		</subclass>
+	</class>
+</hibernate-mapping>
